@@ -1581,6 +1581,7 @@ footer .footer-bottom .center{
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
   }
   
   .sample-card {
