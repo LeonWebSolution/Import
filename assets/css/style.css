@@ -455,6 +455,7 @@ section.main .fp-overflow .container{
 
 section.two{
     position: relative;
+    margin-top: 50px;
 }
 section.two .content{
     padding: 40px 0 100px
@@ -784,10 +785,20 @@ section.four .right{
     align-items: center;
 }
 section.four .right ul{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 28px;
     align-items: center;
+}
+
+section.four .right .text .item.active ul {
+    display: flex;
+}
+
+section.four .right .text .item.item.active .content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 section.four .right li{
     width: fit-content;
@@ -1544,6 +1555,41 @@ footer .footer-bottom .center{
     display: none;
 }
 
+.space-holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  
+  .cards {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .sample-card {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    flex-shrink: 0;
+  }
+
 @media screen and (max-width: 800px) {
     
     section {
@@ -2098,4 +2144,30 @@ footer .footer-bottom .center{
         display: none;
     }
 
+    .sticky {
+        height: 100% !important;
+        position: relative;
+    }
+
+    .horizontal {
+        position: relative;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .sample-card {
+        height: 100%;
+    }
+
+    section.minus .content {
+        padding-top: 0;
+    }
+
 }
+
+
+  
+ 
+  
