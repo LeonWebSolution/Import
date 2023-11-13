@@ -140,9 +140,11 @@ header.desktop-header .content{
 /* SECTION MINUS */
 
 section.minus{
-    padding-top: 100px;
     position: relative;
     display: block;
+}
+section.minus .content{
+    padding-top: 100px;
 }
 section.minus .for-img > img{
     position: absolute;
