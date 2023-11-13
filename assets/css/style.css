@@ -140,6 +140,7 @@ header.desktop-header .content{
 /* SECTION MINUS */
 
 section.minus{
+    padding-top: 100px;
     position: relative;
     display: block;
 }
