@@ -113,6 +113,16 @@ if (!isMobile) {
   });
 }
 
-var video = document.getElementById('myVideo');
-video.play();
+$('.popup-back').click(function (e) {
+  // Check if the clicked element is not a child of .popup
+  if (!$(e.target).closest('.popup').length) {
+      // If not a child of .popup, fade out the .popup-back
+      $('.popup-back').fadeOut();
+  }
+});
+
+
+$('.five .item').click(function (e) {
+  $('.popup-back').fadeIn();
+});
 
