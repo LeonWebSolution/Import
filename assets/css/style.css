@@ -63,6 +63,9 @@ header.desktop-header .header-top .left img{
     width: 3.2rem;
     height: 3.2rem;
 }
+.header-mobile{
+    display: none;
+}
 header.desktop-header .header-top .center img{
     height: 60px;
     width: auto;
