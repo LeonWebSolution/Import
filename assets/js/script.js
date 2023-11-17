@@ -128,7 +128,7 @@ $('.five .item').click(function (e) {
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 60,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true,
