@@ -57,7 +57,7 @@ if (!isMobile) {
 $(document).ready(function(){
   $(".eleven .item").click(function(){
       $(this).find(".text").slideToggle();
-      $(".text").not($(this).find(".text")).slideUp();
+      $(".eleven .text").not($(this).find(".text")).slideUp();
   });
 });
 
@@ -124,5 +124,23 @@ $('.popup-back').click(function (e) {
 
 $('.five .item').click(function (e) {
   $('.popup-back').fadeIn();
+});
+
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+    draggable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
 });
 
