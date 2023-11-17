@@ -2414,6 +2414,9 @@ footer .footer-bottom .center{
     .parallax .iphone{
         width: 95%;
     }
+    .header-mobile{
+        display: block;
+    }
     .header-mobile .container{
         flex-direction: row;
         display: flex;
@@ -2446,6 +2449,8 @@ footer .footer-bottom .center{
     section.five .wrap::-webkit-scrollbar{
         display: none;
     }
+
+}
 
 .three .item:nth-child(1) {
     position: sticky;
