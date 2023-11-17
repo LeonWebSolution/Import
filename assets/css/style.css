@@ -1760,10 +1760,6 @@ footer .footer-bottom .center{
 }
 
 @media screen and (max-width: 800px) {
-
-    body {
-        overflow: hidden;
-    }
     
     section {
         padding: 20px 24px;
