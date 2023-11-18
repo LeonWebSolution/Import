@@ -111,6 +111,7 @@ header.desktop-header .header-bottom ul{
 header.desktop-header .header-bottom a{
     display: block;
     padding: 3rem 0;
+    text-align: center;
 }
 header.desktop-header .header-bottom a::before {
     display: block;
@@ -520,6 +521,7 @@ section.two h2{
     line-height: 123.5%; /* 44.46px */
     width: fit-content;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 section.two h2::after{
     display: block;
@@ -672,7 +674,7 @@ section.three .item {
   }
 .title-section-three {
     position: sticky;
-    top: 0%;
+    top: 10%;
     z-index: 8;
 }
 section.three h2{
@@ -1229,11 +1231,11 @@ section.nine .wrap{
     gap: 20px;
     position: relative;
     z-index: 2;
-    height: 650px;
+    height: auto;
 }
 section.nine .wrap .left{
     flex: 1;
-    height: 650px;
+    height: auto;
     text-align: center;
     font-size: 2rem;
     font-style: normal;
@@ -1292,7 +1294,7 @@ section.nine .wrap .right{
 }
 section.nine .wrap .right .none, section.nine .show{
     opacity: 1;
-    padding: 45px;
+    padding: 4.5rem;
     border-radius: 8px;
     background: linear-gradient(135deg, #FFF 24.82%, #FFF 97.97%);
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.10);
@@ -1300,7 +1302,10 @@ section.nine .wrap .right .none, section.nine .show{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
+    height: 95%;
+}
+section.nine .wrap .left .el:nth-child(1){
+    
 }
 section.nine .show{
     opacity: 1;
@@ -2489,6 +2494,13 @@ footer .footer-bottom .center{
         flex-direction: column;
         gap: 2rem;
     }
+    section.nine .wrap .left .row .item{
+        width: 100%;
+    }
+    .section.seven .wrap .item img{
+        width: 100%;
+        height: 130rem;
+    }
     .hamburger span{
         width: 15rem;
         height:2rem;
@@ -2517,32 +2529,32 @@ footer .footer-bottom .center{
 
 .three .item:nth-child(1) {
     position: sticky;
-    top: 0%;
+    top: 22%;
     z-index: 7;
 }
 .three .item:nth-child(2) {
     position: sticky;
-    top: 12%;
+    top: 34%;
     z-index: 6;
 }
 .three .item:nth-child(3) {
     position: sticky;
-    top: 24%;
+    top: 46%;
     z-index: 5;
 }
 .three .item:nth-child(4) {
     position: sticky;
-    top: 36%;
+    top: 58%;
     z-index: 4;
 }
 .three .item:nth-child(5) {
     position: sticky;
-    top: 48%;
+    top: 70%;
     z-index: 3;
 }
 .three .item:nth-child(6) {
     position: sticky;
-    top: 60%;
+    top: 82%;
     z-index: 2;
 }
 
@@ -2560,3 +2572,11 @@ footer .footer-bottom .center{
     justify-content: center;
 }
 
+#header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999999;
+    background: #fff;
+  }

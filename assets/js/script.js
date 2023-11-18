@@ -144,3 +144,17 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
+$(document).ready(function() {
+  var header = $("#header");
+  var headerOffset = header.offset().top;
+
+  $(window).scroll(function() {
+    if (window.pageYOffset > headerOffset) {
+      header.addClass("fixed");
+      $('.main').css('margin-top', '8rem')
+    } else {
+      header.removeClass("fixed");
+      $('.main').css('margin-top', '0')
+    }
+  });
+});
