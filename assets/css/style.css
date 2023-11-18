@@ -148,6 +148,7 @@ section.minus{
     position: relative;
     display: block;
     height: 100vh;
+    background: #fff;
 }
 section.minus .content{
     padding-top: 10rem;
@@ -155,9 +156,14 @@ section.minus .content{
 section.minus .for-img > img{
     position: absolute;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     left: 0;
     top: 0;
+    
+}
+.section.seven .wrap .item .tel {
+    width: 3rem;
+    height: 3rem;
 }
 section.minus .container{
     height: 100%;
@@ -168,6 +174,8 @@ section.minus .content{
     gap: 20px;
     justify-content: space-between;
     height: 100%;
+    z-index: 999999;
+    position: relative;
 }
 section.minus .content > *{
     flex: 1;
@@ -1191,6 +1199,10 @@ section.seven .wrap .text{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 
