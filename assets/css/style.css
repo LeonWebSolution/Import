@@ -2534,6 +2534,32 @@ footer .footer-bottom .center{
         max-width: 100%;
         margin: 0 auto;
     }
+    .parallax .iphone {
+        width: 90%;
+        left: 0;
+    }
+    section.three .wrap {
+    margin-top: 350px;
+    padding: 24px;
+    }
+    section.nine .wrap {
+    height: auto !important;
+    }
+    .sample-card {
+        height: auto;
+    }
+    .section.zero .wrap .left .el{
+        height: auto !important;
+    }
+    section.zero .wrap .el > img {
+        height: 80rem;
+    }
+    section.two .content{
+        padding-top: 10px;
+    }
+    section.nine .wrap .left .row-yel{
+        background-color: #F5C61F;
+    }
 }
 
 .three .item:nth-child(1) {
